@@ -25,7 +25,7 @@ nodemon server
 ```
 Then navigate to localhost:3000 to test the project
 
-##Screenshots
+## Screenshots
 
 [<img src="https://i.ibb.co/b7pjK49/Screenshot-44.png" 
 width="500"
