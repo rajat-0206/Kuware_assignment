@@ -41,7 +41,8 @@ connectToDB((err,dbname)=>{
     let answer = await w3Topics().find({}).toArray()
     res.render("index.ejs",{"topics":answer});
   });
-  app.listen(3000,()=>{
-    console.log("Serving starting at port 3000")
-  });
+ const server_port = process.env.PORT|| 3000 || 80;
+  const server_host = '0.0.0.0' || 'localhost';
+    app.listen(server_port, server_host, ()=>{ console.log(`listening on ${server_port}`);
+    })
 })
